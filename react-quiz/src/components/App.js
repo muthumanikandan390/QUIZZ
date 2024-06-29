@@ -62,7 +62,7 @@ export default function App() {
       {status === 'loading' && <Loader />}
       {status === 'error' && <Error />}
       {status === 'ready' && <StartScreen numQuestions = {numQuestions} dispatch = {dispatch}/>}
-      {status === 'active' && <Question question = {questions[index]} answer={answer}/>}
+      {status === 'active' && <Question question = {questions[index]} dispatch = {dispatch} answer={answer}/>}
     </Main>
 
      </div>
